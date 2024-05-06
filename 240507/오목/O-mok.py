@@ -19,7 +19,7 @@ for i in range(19-4):
             answer=1
             mid_pos_x,mid_pos_y=i+3,j+3
             break
-        elif board[i-4][j]==1 and board[i-3][j+1]==1 and board[i-2][j+2]==1 and board[i-1][j+3]==1 and board[i][j+4]==1:
+        elif board[i+4][j]==1 and board[i+3][j+1]==1 and board[i+2][j+2]==1 and board[i+1][j+3]==1 and board[i][j+4]==1:
             answer=1
             mid_pos_x,mid_pos_y=i-1,j+3
             break
@@ -35,7 +35,7 @@ for i in range(19-4):
             answer=2
             mid_pos_x,mid_pos_y=i+3,j+3
             break
-        elif board[i-4][j]==2 and board[i-3][j+1]==2 and board[i-2][j+2]==2 and board[i-1][j+3]==2 and board[i][j+4]==2:
+        elif board[i+4][j]==2 and board[i+3][j+1]==2 and board[i+2][j+2]==2 and board[i+1][j+3]==2 and board[i][j+4]==2:
             answer=2
             mid_pos_x,mid_pos_y=i-1,j+3
             break

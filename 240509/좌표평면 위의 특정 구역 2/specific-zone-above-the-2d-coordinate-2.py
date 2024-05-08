@@ -4,7 +4,7 @@ for i in range(n):
     x,y=map(int,input().split())
     points.append((x,y))
 
-answer=int(1e9)
+answer=int(2e9)
 for i in range(n):
     max_x,max_y=0,0
     min_x,min_y=40000,40000

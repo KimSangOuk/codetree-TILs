@@ -14,8 +14,11 @@ for j in range(n):
     for i in range(n):
         tmp.append(board[i][j])
     arr.append(tmp)
-
+    
 for k in arr:
+    if m==1 and len(k)==1:
+        answer+=1
+        continue
     cnt=1
     now=k[0]
     for t in range(1,len(k)):

@@ -47,7 +47,7 @@ def bfs(board,x,y,dist):
 
 for i in range(n):
     for j in range(n):
-        for k in range(max_k+1):
+        for k in range(2*n):
             cnt=bfs(board,i,j,k)
             if k*k+(k+1)*(k+1)<=m*cnt:
                 answer=max(cnt,answer)

@@ -3,7 +3,7 @@ arr=[0]*101
 
 for i in range(n):
     candy,basket=map(int,input().split())
-    arr[basket]=candy
+    arr[basket]+=candy
 
 answer=0
 for i in range(0,101):

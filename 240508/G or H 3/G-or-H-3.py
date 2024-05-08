@@ -7,6 +7,8 @@ for i in range(n):
     alpha_man.append((int(pos),alpha))
     length=max(length,int(pos))
 
+length=max(length,k+1)
+
 arr=[0]*length
 for pos,alpha in alpha_man:
     if alpha=='G':

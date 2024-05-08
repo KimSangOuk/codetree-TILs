@@ -7,6 +7,7 @@ for i in range(n):
 
 answer=0
 for i in range(101-2*k):
+    print(i,i+2*k+1)
     answer=max(answer,sum(arr[i:i+2*k+1]))
 
 print(answer)

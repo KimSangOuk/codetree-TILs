@@ -19,7 +19,7 @@ for i in range(len(arr)):
             g_cnt+=1
         else:
             h_cnt+=1
-        if g_cnt==h_cnt:
+        if g_cnt==h_cnt or h_cnt==0 or g_cnt==0:
             # print("업데이트",arr[j][0],arr[j][1])
             answer=max(arr[j][0]-arr[i][0],answer)
 print(answer)

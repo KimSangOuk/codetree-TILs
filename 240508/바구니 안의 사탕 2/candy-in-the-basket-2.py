@@ -6,8 +6,10 @@ for i in range(n):
     arr[basket]=candy
 
 answer=0
-for i in range(101-2*k):
-    print(i,i+2*k+1)
-    answer=max(answer,sum(arr[i:i+2*k+1]))
+if 101-2*k>0:
+    for i in range(101-2*k):
+        answer=max(answer,sum(arr[i:i+2*k+1]))
+else:
+    answer=sum(arr)
 
 print(answer)

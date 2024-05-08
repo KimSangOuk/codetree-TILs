@@ -15,7 +15,7 @@ for pos,alpha in alpha_man:
         arr[pos-1]=2
 
 answer=0
-for i in range(length-k+2):
+for i in range(length-k+1):
     answer=max(answer,sum(arr[i:i+k+1]))
 
 print(answer)

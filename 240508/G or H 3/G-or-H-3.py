@@ -13,7 +13,6 @@ for pos,alpha in alpha_man:
         arr[pos-1]=1
     elif alpha=='H':
         arr[pos-1]=2
-print(arr)
 
 answer=0
 for i in range(length-k):

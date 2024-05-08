@@ -12,4 +12,6 @@ if 101-2*k>0:
 else:
     answer=sum(arr)
 
+print(sum(arr))
+
 print(answer)

@@ -1,3 +1,5 @@
+import copy
+
 n,b=map(int,input().split())
 students=list()
 for i in range(n):
@@ -10,12 +12,13 @@ answer=0
 for i in range(n):
     cost=0
     cnt=0
-    students[i][0]//=2
-    students.sort(key=lambda x:x[0]+x[1])
+    tmp=copy.deepcopy(students)
+    tmp[i][0]//=2
+    tmp.sort(key=lambda x:x[0]+x[1])
     for j in range(n):
-        cost+=students[j][0]+students[j][1]
+        cost+=tmp[j][0]+tmp[j][1]
         if cost<=b:
             cnt+=1
-    students[i][0]*=2
+    tmp[i][0]*=2
     answer=max(answer,cnt)
 print(answer)

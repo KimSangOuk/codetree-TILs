@@ -8,4 +8,7 @@ answer=0
 for i in range(n):
     if arr[i] in arr[i+1:i+k+1]:
         answer=max(answer,arr[i])
-print(answer)
+if answer==0:
+    print(-1)
+else:
+    print(answer)

@@ -1,5 +1,5 @@
 n=int(input())
-working=[0]*101
+working=[0]*1001
 workers=[]
 for i in range(n):
     s,e=map(int,input().split())
@@ -13,7 +13,7 @@ for i in range(n):
     for k in range(workers[i][0],workers[i][1]):
         working[k]-=1
     time=0
-    for t in range(101):
+    for t in range(1,1001):
         if working[t]>0:
             time+=1
     for k in range(workers[i][0],workers[i][1]):

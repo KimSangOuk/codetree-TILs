@@ -15,14 +15,14 @@ for i in range(s):
         ep,em,et=eat_data[j]
         if ep==p and et<t:
             cheeses[em-1].append(ep)
+answer=0
 
-sick_check=[0]*n
 for i in range(m):
     if len(set(cheeses[i]))==s:
+        sick_check=[0]*n    
         for j in range(d):
             ep,em,et=eat_data[j]
             if em==i+1:
                 sick_check[ep-1]=1
-
-answer=sum(sick_check)
+        answer=max(answer,sum(sick_check))
 print(answer)

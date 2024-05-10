@@ -1,9 +1,9 @@
 n=int(input())
-arr_w=[0]*101
-arr_b=[0]*101
-arr_end=[0]*101
+arr_w=[0]*200001
+arr_b=[0]*200001
+arr_end=[0]*200001
 
-start=50
+start=100000
 for i in range(n):
     dict,dir=input().split()
     dict=int(dict)
@@ -22,7 +22,7 @@ for i in range(n):
 w_cnt=0
 b_cnt=0
 g_cnt=0
-for i in range(101):
+for i in range(200001):
     if arr_b[i]>=2 and arr_w[i]>=2:
         g_cnt+=1
     elif arr_end[i]==1:

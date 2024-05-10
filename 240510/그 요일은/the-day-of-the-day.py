@@ -15,6 +15,6 @@ while True:
     if d1>months[m1]:
         d1=1
         m1+=1
-    if day_of_the_week[dow]==a:
-        answer+=1
+    # if day_of_the_week[dow]==a:
+    #     answer+=1
 print(answer)

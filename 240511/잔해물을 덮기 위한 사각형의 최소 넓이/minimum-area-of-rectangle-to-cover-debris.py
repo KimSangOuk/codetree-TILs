@@ -15,4 +15,12 @@ for i in range(2001):
             max_x=max(max_x,i)
             min_y=min(min_y,j)
             max_y=max(max_y,j)
-print((max_x+1-min_x)*(max_y+1-min_y))
+for i in range(min_x,max_x+1):
+    for j in range(min_y,max_y+1):
+        board[i][j]=1
+answer=0
+for i in range(2001):
+    for j in range(2001):
+        if board[i][j]==1:
+            answer+=1
+print(answer)

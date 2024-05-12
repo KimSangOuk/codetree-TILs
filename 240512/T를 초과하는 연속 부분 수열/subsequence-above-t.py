@@ -10,5 +10,5 @@ for i in range(n):
         cnt=0
     else:
         cnt+=1
-        answer=max(answer,cnt)
+    answer=max(answer,cnt)
 print(answer)

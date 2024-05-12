@@ -1,6 +1,6 @@
 n,k,p,t=map(int,input().split())
 get_cold=[0]*(n+1)
-cnt_put=[p]*(n+1)
+cnt_put=[k]*(n+1)
 record=list()
 for i in range(t):
     record.append(list(map(int,input().split())))

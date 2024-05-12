@@ -6,10 +6,10 @@ for i in range(t):
 get_cold[p]=1
 record.sort()
 for i in range(t):
-    if p>0 and (get_cold[record[i][0]]==1 or get_cold[record[i][1]]==1):
+    if p>0 and (get_cold[record[i][1]]==1 or get_cold[record[i][2]]==1):
         p-=1
-        get_cold[i][0]=1
-        get_cold[i][1]=1
+        get_cold[record[i][1]]=1
+        get_cold[record[i][2]]=1
 
-for i in range(n):
-    print(i,end='')
+for i in range(1,n+1):
+    print(get_cold[i],end='')

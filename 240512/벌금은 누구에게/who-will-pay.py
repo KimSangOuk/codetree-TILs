@@ -8,5 +8,6 @@ for i in range(m):
     if arr[num]>=k:
         print(num)
         tf=True
+        break
 if not tf:
     print(-1)

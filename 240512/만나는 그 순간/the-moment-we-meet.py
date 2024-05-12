@@ -23,4 +23,7 @@ for i in range(1,len(a)):
     if a[i]==b[i]:
         answer=i
         break
-print(answer)
+if answer==0:
+    print(-1)
+else:
+    print(answer)

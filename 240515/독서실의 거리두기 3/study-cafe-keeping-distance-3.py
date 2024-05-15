@@ -21,4 +21,5 @@ min_length=n
 for i in range(1,n):
     if arr[i]==1:
         min_length=min(i-last_index,min_length)
+        last_index=i
 print(min_length)

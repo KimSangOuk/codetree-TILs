@@ -40,9 +40,12 @@ else:
 arr[find_index]=1
 answer=n
 last_index=0
-# print(arr)
-for i in range(1,n):
+for i in range(n):
     if arr[i]==1:
+        last_index=i
+        break
+for i in range(1,n):
+    if arr[i]==1 and i!=last_index:
         answer=min(answer,i-last_index)
         last_index=i
 print(answer)

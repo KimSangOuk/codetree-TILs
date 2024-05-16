@@ -12,5 +12,5 @@ for i in range(n):
         last_cnt=m*2
     elif m*2+1>=last_cnt>0:
         last_cnt-=1
-    print(i,last_cnt,answer)
+    # print(i,last_cnt,answer)
 print(answer)

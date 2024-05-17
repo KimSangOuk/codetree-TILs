@@ -35,6 +35,6 @@ while True:
             continue
         else:
             break
-if hol>0 or jak>0:
+if hol>0:
     answer-=1
 print(answer)

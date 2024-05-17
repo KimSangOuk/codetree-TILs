@@ -1,13 +1,17 @@
-cnt=0
 n,k=map(int,input().split())
-diff=dict()
+cnt=dict()
 arr=list(map(int,input().split()))
 for i in range(n):
-    if k-arr[i] in diff:
-        diff[k-arr[i]]=arr[i]
+    if arr[i] not in cnt:
+        cnt[arr[i]]=1
     else:
-        diff[arr[i]]=0
-for i in diff.keys():
-    if diff[i]>0:
-        cnt+=1
-print(cnt)
+        cnt[arr[i]]+=1
+answer=0
+for i in list(set(cnt.keys())):
+    if i==k-i:
+        if i in cnt:
+            answer+=(cnt[i])*(cnt[i]-1)
+    else:
+        if i in cnt and k-i in cnt:
+            answer+=(cnt[i])*(cnt[k-i])
+print(answer//2)

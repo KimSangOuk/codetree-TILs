@@ -16,13 +16,11 @@ while True:
             jak-=1
             answer+=1
             turn=1
-            # print(jak,hol,"짝하나")
             continue
         elif hol>=2:
             hol-=2
             answer+=1
             turn=1
-            # print(jak,hol,"홀두개")
             continue
         else:
             break
@@ -31,7 +29,6 @@ while True:
             answer+=1
             hol-=1
             turn=0
-            # print(jak,hol,"홀하나")
             continue
         else:
             break

@@ -8,7 +8,6 @@ for i in range(1,n+1):
         h,w=i,j
         for s in range(n-h+1):
             for t in range(m-w+1):
-                # print(h,w,s,t)
                 tf=True
                 for k in range(s,s+h):
                     for q in range(t,t+w):
@@ -16,5 +15,7 @@ for i in range(1,n+1):
                             tf=False
                             break
                 if tf:
+                    # if answer<h*w:
+                    #     print(h,w,s,t)
                     answer=max(answer,h*w)
 print(answer)

@@ -7,4 +7,4 @@ for i in range(n):
     answer=max(sum_value,answer)
     if sum_value<0:
         sum_value=0
-print(sum_value)
+print(answer)

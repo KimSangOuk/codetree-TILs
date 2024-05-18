@@ -15,3 +15,5 @@ for i in range(n):
             print(0)
     elif order[0]=='pop':
         print(heapq.heappop(q))
+    elif order[0]=='top':
+        print(q[0])

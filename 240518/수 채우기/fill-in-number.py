@@ -1,12 +1,8 @@
 n=int(input())
 answer=0
-while True:
-    answer+=n//5
-    n%=5
-    if n==0:
-        break
-    answer+=n//2
-    n%=2
-    if n==0:
-        break
-print(answer)
+dp=[int(1e9)]*50001
+dp[2]=1
+dp[5]=1
+for i in range(3,n+1):
+    dp[i]=min(dp[i-2],dp[i-5])+1
+print(dp[n])

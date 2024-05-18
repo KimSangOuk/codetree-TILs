@@ -23,10 +23,8 @@ for i in range(n-3,0,-1):
         sum_value+=min_value
         min_index=i
         min_value=arr[i]
-        length+=1
-        answer=max(answer,sum_value/length)
     elif arr[i]>min_value:
         sum_value+=arr[i]
-        length+=1
-        answer=max(answer,sum_value/length)
+    length+=1
+    answer=max(answer,sum_value/length)    
 print("{:.2f}".format(answer))

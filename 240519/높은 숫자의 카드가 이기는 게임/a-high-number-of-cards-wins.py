@@ -11,9 +11,7 @@ a_card.sort()
 a_index=0
 b_index=0
 score=0
-cnt=0
 while a_index<n and b_index<n:
-    cnt+=1
     if b_card[b_index]<a_card[a_index]:
         score+=1
         a_index+=1

@@ -1,13 +1,15 @@
 import sys
 
 n=int(input())
-b_card=[]
+b_card=set()
 a_card=[]
 for i in range(n):
-    b_card.append(int(sys.stdin.readline()))
+    b_card.add(int(sys.stdin.readline()))
+b_card=set(b_card)
 for i in range(1,2*n+1):
     if i not in b_card:
         a_card.append(i)
+b_card=list(b_card)
 b_card.sort()
 a_card.sort()
 a_index=0

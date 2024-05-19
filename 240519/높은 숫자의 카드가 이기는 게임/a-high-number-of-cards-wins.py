@@ -1,8 +1,10 @@
+import sys
+
 n=int(input())
 b_card=[]
 a_card=[]
 for i in range(n):
-    b_card.append(int(input()))
+    b_card.append(int(sys.stdin.readline()))
 for i in range(1,2*n+1):
     if i not in b_card:
         a_card.append(i)

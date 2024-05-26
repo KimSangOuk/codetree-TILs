@@ -7,5 +7,8 @@ for i in range(1,n):
         arr[i-1]=int(not bool(arr[i-1]))
         arr[i]=int(not bool(arr[i]))
         if i+1<n:
-            arr[i+1]=int(not bool(arr[i]))
-print(cnt)
+            arr[i+1]=int(not bool(arr[i+1]))
+if arr[n-1]==0:
+    print(-1)
+else:
+    print(cnt)
